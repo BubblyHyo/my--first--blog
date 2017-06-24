@@ -8,7 +8,6 @@ class Post(models.Model):
     text = models.TextField()
     created_date = models.DateTimeField(
             default=timezone.now)
-    image = models.ImageField()
     published_date = models.DateTimeField(
             blank=True, null=True)
     updated_date = models.DateTimeField(
